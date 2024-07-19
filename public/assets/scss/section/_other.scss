@@ -1,0 +1,1085 @@
+/* 05. other css here */
+.hero_banner_section{
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    height: 940px;
+    position: relative;
+    @media #{$laptop-device}{
+        height: 820px;
+    }
+    @media #{$desktop-device}{
+        height: 780px;
+    }
+    @media #{$tablet-device}{
+        height: 670px;
+    }
+    @media #{$large-mobile}{
+        height: 600px;
+    }
+    @media #{$small-mobile2}{
+        height: 570px;
+     }
+    &.mb-130{
+        @media #{$tablet-device}{
+            margin-bottom: 72px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 56px;
+        }
+    }
+}
+
+.hero_position_img{
+   position: absolute;
+   bottom: 0;
+   right: 55px;
+    @media #{$desktop-device}{
+        right: 20px;
+    }
+    @media #{$tablet-device}{
+        right: 0;
+        left: 0;
+        text-align: center;
+    }
+    @media #{$large-mobile}{
+        right: 0;
+        left: 0;
+        text-align: center;
+    }
+    & img{
+        @media #{$laptop-device}{
+            width: 650px;
+        }
+        @media #{$desktop-device}{
+            width: 620px;
+        }
+        @media #{$tablet-device}{
+            width: 450px;
+        }
+        @media #{$large-mobile}{
+           width: 300px;
+        }
+   }
+}
+.hero_content{
+    padding-top: 78px;
+    position: relative;
+    z-index: 9;
+    @media #{$tablet-device}{
+        text-align: center;
+        padding-top: 0;
+        margin-bottom: 50px;
+    }
+    @media #{$large-mobile}{
+        text-align: center;
+        margin-bottom: 0;
+        padding-top: 28px;
+    }
+    @media #{$small-mobile2}{
+        padding-top: 152px;
+     }
+    & h1{
+        margin-bottom: 41px;
+        font-family: $metalfonts;
+        text-shadow: 3px 3px 0px #b154f0;
+        @media #{$laptop-device}{
+            font-size: 95px;
+            line-height: 98px;
+        }
+        @media #{$desktop-device}{
+            margin-bottom: 33px;
+            font-size: 88px;
+            line-height: 88px;
+        }
+        @media #{$tablet-device}{
+            margin-bottom: 21px;
+            font-size: 75px;
+            line-height: 78px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 15px;
+            font-size: 52px;
+            line-height: 55px;
+        }
+        @media #{$small-mobile2}{
+            margin-bottom: 13px;
+            font-size: 40px;
+            line-height: 48px;
+         }
+    }
+    & p{
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 47px;
+        @media #{$desktop-device}{
+            font-size: 23px;
+            margin-bottom: 40px;
+        }
+        @media #{$tablet-device}{
+            font-size: 22px;
+            margin-bottom: 31px;
+        }
+        @media #{$large-mobile}{
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+        @media #{$small-mobile2}{
+            font-size: 17px;
+            margin-bottom: 20px;
+            line-height: 28px;
+         }
+    }
+}
+
+
+
+
+// gaming world section css here
+.gaming_world_section {
+    &.mb-140{
+        @media #{$tablet-device}{
+            margin-bottom: 80px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 30px;
+        }
+    }
+}
+.gaming_world_inner{
+    & .row{
+        margin-left: -20px;
+        margin-right: -20px;
+        @media #{$laptop-device}{
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        @media #{$desktop-device}{
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        @media #{$tablet-device}{
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        @media #{$large-mobile}{
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+    }
+    & .col-lg-4{
+        padding-left: 20px;
+        padding-right: 20px;
+        @media #{$desktop-device}{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        @media #{$tablet-device}{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        @media #{$large-mobile}{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+.single_gaming_world {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    padding: 55px 40px 50px;
+    @media #{$desktop-device}{
+        padding: 54px 25px 45px;
+    }
+    @media #{$tablet-device}{
+        padding: 30px 20px 35px;
+    }
+    @media #{$large-mobile}{
+        padding: 30px 20px 28px;
+        margin-bottom: 30px;
+    }
+    @media #{$small-mobile2}{
+        margin-bottom: 20px;
+    }
+}
+
+.gaming_world_thumb {
+    margin-bottom: 50px;
+    @media #{$tablet-device}{
+        margin-bottom: 30px;
+    }
+    @media #{$large-mobile}{
+        margin-bottom: 25px;
+    }
+}
+.gaming_world_text{
+    & h3{
+        margin-bottom: 17px;
+        @media #{$desktop-device}{
+            font-size: 23px;
+            line-height: 38px;
+        }
+        @media #{$tablet-device}{
+            margin-bottom: 13px;
+            font-size: 18px;
+            line-height: 38px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 11px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        & a{
+            &:hover{
+                color: $secondary_color;
+            }
+        }
+    }
+    & p{
+        @media #{$tablet-device}{
+            font-size: 15px;
+            line-height: 28px;
+        }
+        @media #{$large-mobile}{
+            font-size: 15px;
+            line-height: 28px;
+        }
+    }
+}
+
+
+// gaming video section css here
+.gaming_video_section {
+    &.mb-118{
+        @media #{$tablet-device}{
+            margin-bottom: 64px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 44px;
+        }
+    }
+}
+.gaming_video_thumb{
+    position: relative;
+    & > img{
+        @media #{$small-mobile2}{
+            height: 251px;
+            object-fit: cover;
+        }
+    }
+}
+
+.gaming_video_paly_icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    & img{
+        @media #{$tablet-device}{
+            width: 80px;
+        }
+        @media #{$large-mobile}{
+            width: 60px;
+        }
+    }
+}
+
+.live_streaming_text{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../img/others/text-mini-shape.webp);
+    height: 86px;
+    display: flex;
+    align-items: center;
+    padding: 0 86px;
+    @media #{$desktop-device}{
+        height: 64px;
+        padding: 0 104px;
+    }
+    @media #{$tablet-device}{
+        height: 58px;
+        padding: 0 60px;
+        width: 480px;
+        justify-content: center;
+    }
+    @media #{$large-mobile}{
+        height: 49px;
+        padding: 0 42px;
+        width: 330px;
+        background-size: cover;
+        justify-content: center;
+    }
+    @media #{$small-mobile2}{
+        height: 44px;
+        padding: 0 35px;
+        width: 265px;
+    }
+    & h3{
+        font-size: 28px;
+        margin-bottom: 0;
+        @media #{$desktop-device}{
+            font-size: 23px;
+        }
+        @media #{$tablet-device}{
+            font-size: 21px;
+        }
+        @media #{$large-mobile}{
+            font-size: 15px;
+            line-height: 25px;
+        
+        }
+    }
+}
+
+.gaming_video_inner{
+    & > button{
+        left: -135px;
+        @media #{$laptop-device}{
+            left: 0;
+        }
+        @media #{$desktop-device}{
+            left: 0;
+        }
+        @media #{$tablet-device}{
+            left: 0;
+        }
+        @media #{$large-mobile}{
+            left: 0;
+        
+        }
+        &.next_arrow{
+            right: -135px;
+            left: auto;
+            @media #{$laptop-device}{
+                right: 0;
+            }
+            @media #{$desktop-device}{
+                right: 0;
+            }
+            @media #{$tablet-device}{
+                right: 0;
+            }
+            @media #{$large-mobile}{
+                right: 0;
+            
+            }
+        }
+    }
+}
+
+// upcoming gaming css here
+
+.upcoming_gaming_section {
+    &.mb-125{
+        @media #{$tablet-device}{
+            margin-bottom: 70px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 48px;
+        }
+    }
+}
+.upcoming_gaming_list{
+    border: 4px solid #281e4d;
+    background: $secondary_color2;
+    padding: 32px 65px;
+    border-radius: 38px;
+    @media #{$desktop-device}{
+        padding: 32px 35px;
+    }
+    @media #{$tablet-device}{
+        padding: 28px 25px;
+    }
+    @media #{$large-mobile}{
+        padding: 25px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.upcoming_gaming_text{
+    width: 42%;
+    @media #{$large-mobile}{
+        width: 100%;
+    }
+    & p{
+        font-weight: 500;
+        margin-bottom: 16px;
+        @media #{$tablet-device}{
+            margin-bottom: 13px;
+            font-size: 15px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 13px;
+            font-size: 15px;
+        }
+        @media #{$small-mobile2}{
+            margin-bottom: 11px;
+            font-size: 14px;
+        }
+    }
+    & h3{
+        font-size: 35px;
+        margin-bottom: 11px;
+        @media #{$desktop-device}{
+            font-size: 28px;
+        }
+        @media #{$tablet-device}{
+            font-size: 23px;
+            margin-bottom: 10px;
+            line-height: 25px;
+        }
+        @media #{$large-mobile}{
+            font-size: 23px;
+            margin-bottom: 10px;
+            line-height: 25px;
+        }
+        @media #{$small-mobile2}{
+            font-size: 19px;
+            margin-bottom: 7px;
+            line-height: 21px;
+        }
+        & a{
+            &:hover{
+                color: $secondary_color;
+            }
+        }
+    }
+    & span{
+        font-size: 14px;
+        color: $secondary_color;
+    }
+}
+.upcoming_gaming_thumb{
+    width: 33%;
+    @media #{$large-mobile}{
+        width: 100%;
+        justify-content: center;
+    }
+}
+.single_upcoming_thumb{
+    margin-right: 35px;
+    &:last-child{
+        margin-right: 0;
+    }
+    @media #{$tablet-device}{
+        margin-right: 20px;
+    }
+    @media #{$small-mobile2}{
+        margin-right: 25px;
+    }
+    & img{
+        @media #{$desktop-device}{
+            width: 80px;
+        }
+        @media #{$tablet-device}{
+            width: 60px;
+        }
+        @media #{$large-mobile}{
+            width: 70px;
+        }
+        @media #{$small-mobile2}{
+            width: 60px;
+        }
+    }
+}
+
+.upcoming_play_video{
+    margin: 0 35px;
+    width: 12%;
+    @media #{$desktop-device}{
+        width: 13%;
+    }
+    @media #{$tablet-device}{
+        margin: 0 30px;
+        width: 16%;
+    }
+    @media #{$large-mobile}{
+        margin: 20px 0 15px;
+        width: 100%;
+    }
+    & span{
+        font-size: 14px;
+        line-height: 35px;
+        color: #ffa700;
+        margin-top: 8px;
+    }
+}
+
+.others_match_btn{
+    margin-top: 70px;
+    @media #{$tablet-device}{
+        margin-top: 40px;
+    }
+    @media #{$large-mobile}{
+        margin-top: 32px;
+    }
+}
+
+
+
+// Counterup css here
+.counterup_section {
+    &.mb-115{
+        @media #{$tablet-device}{
+            margin-bottom: 65px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 48px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 18px;
+        }
+    }
+    &.mb-130{
+        @media #{$tablet-device}{
+            margin-bottom: 73px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 23px;
+        }
+    }
+}
+.counterup_inner {
+    @media #{$large-mobile}{
+        flex-wrap: wrap;
+    }
+}
+.single_counterup{
+    margin-right: 85px;
+    padding-right: 85px;
+    position: relative;
+    @media #{$desktop-device}{
+        margin-right: 55px;
+        padding-right: 55px;
+    }
+    @media #{$tablet-device}{
+        margin-right: 33px;
+        padding-right: 40px;
+    }
+    @media #{$large-mobile}{
+        width: 46%;
+        margin-bottom: 30px;
+        margin-right: 30px;
+        padding-right: 62px;
+        &:nth-child(2){
+            margin-right: 0;
+            padding-right: 0;
+            &::before{
+                display: none;
+            }
+        }
+    }
+    @media #{$small-mobile}{
+        width: 100%;
+        margin-right: 0;
+        padding-right: 0;
+        &::before{
+            display: none;
+        }
+    }
+    &:last-child{
+        margin-right: 0;
+        padding-right: 0;
+        &::before{
+            display: none;
+        }
+    }
+    &::before{
+        position: absolute;
+        content: "/ /";
+        right: 0;
+        top: 50%;
+        font-size: 14px;
+        transform: translatey(-50%);
+        color: #33cb33;
+        font-weight: bold;
+    }
+}
+.counterup_text{
+    text-align: center;
+    & h2{
+        font-size: 80px;
+        line-height: 80px;
+        font-weight: 400;
+        font-family: $metalfonts;
+        margin-bottom: 9px;
+        @media #{$desktop-device}{
+            font-size: 73px;
+        }
+        @media #{$tablet-device}{
+            font-size: 60px;
+            line-height: 62px;
+        }
+        @media #{$large-mobile}{
+            font-size: 45px;
+            line-height: 50px;
+        }
+        &.color1{
+            color: #ffb300;
+        }
+        &.color2{
+            color: #1de3eb;
+        }
+        &.color3{
+            color: #df4c21;
+        }
+        &.color4{
+            color: #b154f0;
+        }
+    }
+    & span{
+        font-size: 18px;
+        line-height: 35px;
+        color: #f3f3f3;
+        @media #{$tablet-device}{
+            font-size: 15px;
+            line-height: 30px;
+        }
+        @media #{$large-mobile}{
+            font-size: 15px;
+            line-height: 30px;
+        }
+    }
+}
+
+
+
+// popular game css here
+.popular_gaming_section {
+    &.mb-140{
+        @media #{$tablet-device}{
+            margin-bottom: 50px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 30px;
+        }
+    }
+}
+.popular_gaming_thumb {
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 38px;
+    &::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #000000;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        transition: .3s;
+        border-radius: 38px;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        border: 4px solid rgba(255, 255, 255, 0.2);
+        left: 0;
+        top: 0;
+        border-radius: 38px;
+        transition: .3s;
+        opacity: 0;
+    }
+    & a{
+        display: inline-block;
+        width: 100%;
+        & img{
+            width: 100%;
+            border-radius: 38px;
+        }
+    }
+    &:hover{
+        &::before{
+            opacity: 0.7;
+        }
+        &::after{
+            opacity: 1;
+        }
+        & .gaming_details_btn{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.gaming_details_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translatex(-50%) translatey(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    z-index: 9;
+    & .btn.btn-link{
+        & img{
+            width: auto;
+        }
+    }
+}
+
+
+// gaming update css here
+.gaming_update_section {
+    margin-bottom: 130px;
+    @media #{$tablet-device}{
+        margin-bottom: 78px;
+    }
+    @media #{$large-mobile}{
+        margin-bottom: 60px;
+    }
+}
+.gaming_update_inner{
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    padding: 0 100px;
+    @media #{$desktop-device}{
+        padding: 0 40px;
+    }
+    @media #{$tablet-device}{
+        padding: 0 30px;
+        height: 263px;
+    }
+    @media #{$large-mobile}{
+        padding: 0 30px;
+        flex-direction: column;
+        justify-content: center !important;
+        text-align: center;
+    }
+    @media #{$small-mobile2}{
+        height: 260px;
+    }
+}
+.gaming_update_btn{
+    margin-left: 40px;
+    & .btn.btn-link{
+        font-size: 19px;
+        padding: 0 10px;
+        @media #{$tablet-device}{
+            font-size: 18px;
+        }
+        @media #{$large-mobile}{
+            font-size: 17px;
+        }
+    }
+    @media #{$tablet-device}{
+        margin-left: 30px;
+    }
+    @media #{$large-mobile}{
+        margin-left: 0;
+        margin-top: 24px;
+    }
+}
+.gaming_update_text{
+    & h2{
+        margin-bottom: 0;
+        @media #{$desktop-device}{
+            font-size: 48px;
+            line-height: 62px;
+        }
+        @media #{$tablet-device}{
+            font-size: 38px;
+            line-height: 55px;
+        }
+        @media #{$large-mobile}{
+            font-size: 30px;
+            line-height: 47px;
+        }
+        @media #{$small-mobile2}{
+            font-size: 22px;
+            line-height: 36px;
+        }
+    }
+}
+
+
+// all game css here
+.gaming_page_section {
+    &.mb-125{
+        @media #{$tablet-device}{
+            margin-bottom: 68px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 50px;
+         }
+    }
+}
+.gaming_page_inner{
+    margin-bottom: 40px;
+    @media #{$tablet-device}{
+        margin-bottom: 10px;
+    }
+    @media #{$large-mobile}{
+        margin-bottom: 10px;
+     }
+}
+.gaming_header_inner {
+    @media #{$large-mobile}{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.gaming_form_left {
+    @media #{$large-mobile}{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    @media #{$small-mobile2}{
+        width: 100%;
+    }
+}
+.gaming_page_header{
+    background: $secondary_color2;
+    padding: 32px 70px;
+    border-radius: 15px;
+    @media #{$tablet-device}{
+        padding: 32px 30px;
+    }
+    @media #{$large-mobile}{
+        padding: 30px;
+     }
+     @media #{$small-mobile2}{
+        padding: 30px 20px;
+    }
+    &.mb-70{
+        @media #{$tablet-device}{
+            margin-bottom: 50px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 35px;
+         }
+    }
+}
+
+.gaming_form_list{
+    margin-right: 28px;
+    &:last-child{
+        margin-right: 0;
+    }
+    @media #{$large-mobile}{
+        margin-right: 0;
+        margin-bottom: 25px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    @media #{$small-mobile2}{
+        width: 100%;
+    }
+    & .nice-select{
+        width: 298px;
+        border: 2px solid #281e4d;
+        background: inherit;
+        height: 65px;
+        line-height: 62px;
+        padding: 0 46px 0 30px;
+        font-weight: 500;
+        font-size: 16px;
+        border-radius: 10px;
+        @media #{$desktop-device}{
+            width: 250px;
+        }
+        @media #{$tablet-device}{
+            width: 210px;
+            padding: 0 35px 0 18px;
+        }
+        @media #{$small-mobile2}{
+            width: 100%;
+        }
+        &:hover{
+            border-color: $secondary_color;
+        }
+        &.open{
+            border-color: $secondary_color;
+        }
+        &::after{
+            border-bottom: 2px solid #fff;
+            border-right: 2px solid #fff;
+            width: 7px;
+            height: 7px;
+            right: 28px;
+            @media #{$tablet-device}{
+                right: 18px;
+            }
+        }
+        & ul.list{
+            width: 100%;
+            & li{
+                color: #000000;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.gaming_form_search{
+    position: relative;
+    width: 298px;
+    border: 2px solid #281e4d;
+    border-radius: 10px;
+    transition: .3s;
+    margin-left: 30px;
+    @media #{$desktop-device}{
+        width: 250px;
+    }
+    @media #{$tablet-device}{
+        width: 210px;
+    }
+    @media #{$large-mobile}{
+       margin-left: 0;
+    }
+    @media #{$small-mobile2}{
+        width: 100%;
+    }
+    &:hover{
+        border-color: $secondary_color;
+    }
+    & input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #ffffff;
+        opacity: 1;
+    }
+    & input::-moz-placeholder { /* Firefox 19+ */
+        color: #ffffff;
+        opacity: 1;
+    }
+    & input:-ms-input-placeholder { /* IE 10+ */
+        color: #ffffff;
+        opacity: 1;
+    }
+    & input:-moz-placeholder { /* Firefox 18- */
+        color: #ffffff;
+    }
+    & input{
+        width: 100%;
+        border: 0;
+        height: 61px;
+        background: inherit;
+        color: #f3f3f3;
+        opacity: 0.5;
+        border-radius: 10px;
+        padding: 0 48px 0 25px;
+    }
+    & button{
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        border: 0;
+        padding: 0;
+        background: inherit;
+        transform: translatey(-50%);
+        &:hover{
+            color: $secondary_color;
+        }
+    }
+}
+
+
+
+
+// erroe 404 css here
+section.error_section {
+    padding: 45px 0 200px;
+    @media #{$tablet-device}{
+        padding: 15px 0 100px;
+    }
+    @media #{$large-mobile}{
+        padding: 18px 0 80px;
+    }
+}
+.error_btn{
+    & a{
+        &.btn.btn-link{
+            font-size: 20px;
+            @media #{$large-mobile}{
+                font-size: 16px;
+            }
+            &:hover{
+                & img{
+                    margin-right: 12px;
+                }
+            }
+            & img{
+                margin-left: 0;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.error_title{
+    margin-bottom: 64px;
+    @media #{$large-mobile}{
+        margin-bottom: 34px;
+    }
+    & h3{
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 20px;
+        @media #{$tablet-device}{
+            font-size: 50px;
+            line-height: 52px;
+        }
+        @media #{$large-mobile}{
+            font-size: 38px;
+            line-height: 40px;
+            margin-bottom: 18px;
+        }
+        @media #{$small-mobile2}{
+            font-size: 34px;
+            line-height: 35px;
+            margin-bottom: 15px;
+        }
+    }
+    & p{
+        font-size: 35px;
+        line-height: 35px;
+        text-transform: uppercase;
+        font-weight: 700;
+        @media #{$tablet-device}{
+            font-size: 28px;
+            line-height: 32px
+        }
+        @media #{$large-mobile}{
+            font-size: 20px;
+            line-height: 25px;
+        }
+        @media #{$small-mobile2}{
+            font-size: 18px;
+            line-height: 23px;
+        }
+    }
+}
+
+.error__404 {
+    margin-bottom: 70px;
+    @media #{$large-mobile}{
+        margin-bottom: 40px;
+    }
+    & img{
+        @media #{$tablet-device}{
+            max-width: 550px;
+        }
+        @media #{$large-mobile}{
+            max-width: 400px;
+        }
+        @media #{$small-mobile2}{
+            max-width: 270px;
+        }
+    }
+}

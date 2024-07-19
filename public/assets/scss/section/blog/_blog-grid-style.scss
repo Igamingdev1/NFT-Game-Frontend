@@ -1,0 +1,18 @@
+.single_blog_grid{
+    .blog_thumb{
+        width: 100%;
+        a{
+            display: block;
+        }
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+    .blog_content{
+        width: 100%;
+        padding-left: 0;
+        margin-top: 20px;
+        text-align: left;
+    }
+}

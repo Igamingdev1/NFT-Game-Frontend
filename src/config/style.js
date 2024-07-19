@@ -1,0 +1,2 @@
+export const backGrid = "linear-gradient(45deg, rgba(255, 255, 255, 0) 48%, rgba(255, 255, 255, 0.005) 50%, rgba(255, 255, 255, 0) 52%), linear-gradient(-45deg, rgba(255, 255, 255, 0) 48%, rgba(255, 255, 255, 0.005) 50%, rgba(255, 255, 255, 0) 52%)";
+export const boxShadow = "0 0 25px 2px rgb(0 0 0 / 5%)";

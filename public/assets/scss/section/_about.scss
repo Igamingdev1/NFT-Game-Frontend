@@ -1,0 +1,560 @@
+// about css here
+.testimonial_section{
+    padding: 124px 0 250px;
+    margin-bottom: 125px;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        width: 38%;
+        height: 10px;
+        background: $secondary_color;
+        right: 0;
+        top: 185px;
+        @media #{$tablet-device}{
+            top: 108px;
+        }
+        @media #{$large-mobile}{
+            width: 30%;
+            top: 84px;
+        }
+        @media #{$small-mobile2}{
+            display: none;
+         }
+    }
+    @media #{$tablet-device}{
+        padding: 75px 0 170px;
+        margin-bottom: 74px;
+    }
+    @media #{$large-mobile}{
+        padding: 55px 0 148px;
+        margin-bottom: 56px;
+    }
+    @media #{$small-mobile2}{
+        padding: 55px 0 134px;
+    }
+    & .section_title{
+        @media #{$small-mobile2}{
+            text-align: center;
+        }
+        
+    }
+
+}
+.testimonial_inner{
+    background-size: cover;
+    border-radius: 50px;
+    @media #{$tablet-device}{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    @media #{$small-mobile2}{
+        background-size: cover;
+        background-position: center center;
+     }
+    &.slick_navigation > button{
+        top: auto;
+        bottom: -112px;
+        left: 46%;
+        transform: translatex(-50%);
+        @media #{$tablet-device}{
+            bottom: -90px;
+            left: 44%;
+        }
+        @media #{$large-mobile}{
+            bottom: -88px;
+            left: 43%;
+        }
+        @media #{$small-mobile2}{
+            bottom: -74px;
+            left: 38%;
+         }
+        &.next_arrow{
+            left: 55%;
+            @media #{$tablet-device}{
+                left: 56%;
+            }
+            @media #{$large-mobile}{
+                left: 58%;
+            }
+            @media #{$small-mobile2}{
+                left: 64%;
+            }
+        }
+    }
+}
+.testimonial_thumb{
+    width: 270px;
+    @media #{$tablet-device}{
+        width: 220px;
+    }
+    @media #{$small-mobile2}{
+        width: 100%;
+        text-align: center;
+     }
+}
+.testimonial_content{
+    width: calc(100% - 270px);
+    padding-left: 65px;
+    @media #{$desktop-device}{
+        padding-left: 50px;
+    }
+    @media #{$tablet-device}{
+        width: calc(100% - 220px);
+        padding-left: 30px;
+    }
+    @media #{$large-mobile}{
+        width: 100%;
+        padding-left: 0;
+        padding-top: 28px;
+    }
+}
+.testimonial_list {
+    padding: 70px 100px;
+    @media #{$desktop-device}{
+        padding: 70px 30px;
+    }
+    @media #{$tablet-device}{
+        padding: 50px 20px;
+    }
+    @media #{$large-mobile}{
+        padding: 60px 30px 55px;
+        flex-direction: column;
+        text-align: center;
+    }
+    @media #{$small-mobile2}{
+        padding: 60px 20px 55px;
+     }
+}
+.testimonial_desc{
+    margin-bottom: 35px;
+    @media #{$tablet-device}{
+        margin-bottom: 24px;
+    }
+    @media #{$large-mobile}{
+        margin-bottom: 24px;
+    }
+    & p{
+        font-size: 21px;
+        line-height: 35px;
+        @media #{$desktop-device}{
+            font-size: 18px;
+            line-height: 33px;
+        }
+        @media #{$tablet-device}{
+            font-size: 16px;
+            line-height: 30px;
+        }
+        @media #{$large-mobile}{
+            font-size: 16px;
+            line-height: 30px;
+        }
+        @media #{$large-mobile}{
+            font-size: 15px;
+            line-height: 28px;
+        }
+    }
+
+}
+.testimonial_author{
+    & h3{
+        margin-bottom: 11px;
+        @media #{$tablet-device}{
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 9px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    & span{
+        color: $secondary_color;
+    }
+}
+
+
+// about page css here
+.breadcrumbs_bg {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    height: 502px;
+    display: flex;
+    align-items: center;
+    @media #{$desktop-device}{
+        height: 440px;
+    }
+    @media #{$tablet-device}{
+        height: 390px;
+    }
+    @media #{$large-mobile}{
+        height: 340px;
+    }
+    @media #{$small-mobile2}{
+        height: 420px;
+    }
+    &.mb-140{
+        @media #{$tablet-device}{
+            margin-bottom: 80px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 60px;
+        }
+    }
+}
+
+.breadcrumbs_text {
+    padding-top: 65px;
+    @media #{$small-mobile2}{
+        padding-top: 162px;
+    }
+    & h1{
+        font-size: 90px;
+        line-height: 90px;
+        font-family: $metalfonts;
+        text-shadow: 3px 3px 0px #b154f0;
+        margin-bottom: 25px;
+        @media #{$desktop-device}{
+            font-size: 72px;
+            line-height: 75px;
+            margin-bottom: 22px;
+        }
+        @media #{$tablet-device}{
+            font-size: 62px;
+            line-height: 65px;
+            margin-bottom: 16px;
+        }
+        @media #{$large-mobile}{
+            font-size: 55px;
+            line-height: 60px;
+            margin-bottom: 18px;
+        }
+        @media #{$small-mobile2}{
+            font-size: 42px;
+            line-height: 48px;
+            margin-bottom: 16px;
+        }
+    }
+    & ul{
+        & li{
+            font-size: 17px;
+            font-weight: bold;
+            color: $secondary_color;
+            text-transform: uppercase;
+            margin-right: 8px;
+            @media #{$large-mobile}{
+                font-size: 16px;
+                line-height: 25px;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+            & a{
+                color: #ffffff;
+                &:hover{
+                    color: $secondary_color;
+                }
+            }
+            & span{
+                color: #ffffff;
+            }
+        }
+    }
+}
+.about_section{
+    margin-bottom: 125px;
+    @media #{$tablet-device}{
+        margin-bottom: 68px;
+    }
+    @media #{$large-mobile}{
+        margin-bottom: 49px;
+    }
+}
+
+.about_thumb{
+    position: relative;
+    margin-right: 40px;
+    @media #{$tablet-device}{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    @media #{$large-mobile}{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+.about_sidebar {
+    @media #{$tablet-device}{
+        text-align: center;
+        margin-top: 38px;
+    }
+    @media #{$large-mobile}{
+        text-align: center;
+        margin-top: 38px;
+    }
+}
+.about_video_btn {
+    position: absolute;
+    right: 17px;
+    bottom: -15px;
+    z-index: 1;
+    @media #{$large-mobile}{
+        right: 20px;
+        bottom: -7px;
+    }
+    & img{
+        @media #{$tablet-device}{
+           width: 120px;
+        }
+        @media #{$large-mobile}{
+            width: 85px;
+        }
+    }
+}
+.about_title{
+    & h5{
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: bold;
+        color: $secondary_color;
+        position: relative;
+        padding-left: 98px;
+        margin-bottom: 25px;
+       
+        &::before{
+            position: absolute;
+            content: "";
+            width: 68px;
+            height: 5px;
+            background: $secondary_color;
+            left: 0;
+            top: 50%;
+            transform: translatey(-50%);
+            @media #{$tablet-device}{
+                display: none;
+            }
+            @media #{$large-mobile}{
+                display: none;
+            }
+        }
+        @media #{$desktop-device}{
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 25px;
+        }
+        @media #{$tablet-device}{
+            font-size: 20px;
+            line-height: 25px;
+            padding-left: 0;
+            margin-bottom: 22px;
+        }
+        @media #{$large-mobile}{
+            font-size: 18px;
+            line-height: 25px;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+        @media #{$small-mobile2}{
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 15px;
+        }
+    }
+    & h2{
+        line-height: 70px;
+        margin-bottom: 26px;
+        @media #{$desktop-device}{
+            line-height: 52px;
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+        @media #{$tablet-device}{
+            line-height: 52px;
+            margin-bottom: 17px;
+            font-size: 37px;
+        }
+        @media #{$large-mobile}{
+            line-height: 45px;
+            margin-bottom: 20px;
+            font-size: 34px;
+        }
+        @media #{$small-mobile2}{
+            line-height: 35px;
+            margin-bottom: 22px;
+            font-size: 22px;
+        }
+    }
+}
+
+.about_desc{
+    margin-bottom: 40px;
+    @media #{$desktop-device}{
+        margin-bottom: 30px;
+    }
+    @media #{$large-mobile}{
+        margin-bottom: 28px;
+    }
+    @media #{$small-mobile2}{
+        margin-bottom: 25px;
+    }
+    & p{
+        margin-bottom: 22px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        @media #{$desktop-device}{
+            margin-bottom: 19px;
+        }
+        @media #{$tablet-device}{
+            margin-bottom: 17px;
+        }
+        @media #{$large-mobile}{
+            font-size: 15px;
+            line-height: 28px;
+            margin-bottom: 15px;
+        }
+        @media #{$small-mobile2}{
+            font-size: 14px;
+            line-height: 25px;
+        }
+    }
+}
+.gamer_team_section {
+    &.mb-140{
+        @media #{$tablet-device}{
+            margin-bottom: 80px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 60px;
+        }
+    }
+}
+.gamer_single_team{
+    @media #{$tablet-device}{
+        margin-bottom: 30px;
+    }
+    @media #{$large-mobile}{
+        margin-bottom: 30px;
+    }
+}
+.gamer_team_thumb{
+    position: relative;
+    & a{
+        @media #{$tablet-device}{
+            width: 100%;
+        }
+        & img{
+            @media #{$tablet-device}{
+                width: 100%;
+            }
+        }
+    }
+    
+    &:hover{
+        & .gamer_team_text{
+            background: url(../img/others/tam-text-shape2.webp);
+            background-size: cover;
+            & span{
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.gamer_team_text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: url(../img/others/tam-text-shape.webp);
+    background-size: cover;
+    height: 126px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .3s;
+    & h3{
+        margin-bottom: 8px;
+        & a{
+            color: #ffffff;
+        }
+        @media #{$desktop-device}{
+            margin-bottom: 4px;
+            font-size: 20px;
+            line-height: 28px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 6px;
+            font-size: 18px;
+            line-height: 23px;
+        }
+    }
+    & span{
+        color: $secondary_color;
+        @media #{$large-mobile}{
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+    @media #{$desktop-device}{
+        height: 98px;
+        bottom: -1px;
+    }
+    @media #{$tablet-device}{
+        bottom: -1px;
+    }
+    @media #{$large-mobile}{
+        bottom: -1px;
+        height: 89px;
+    }
+}
+
+.gamer_team_inner{
+    & .row{
+        margin-left: -20px;
+        margin-right: -20px;
+        @media #{$laptop-device}{
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        @media #{$desktop-device}{
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        @media #{$tablet-device}{
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        @media #{$large-mobile}{
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+    }
+    & .col-lg-4{
+        padding-right: 25px;
+        padding-left: 25px;
+        @media #{$tablet-device}{
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        @media #{$large-mobile}{
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+}
+
+.join_our_team_btn{
+    margin-top: 70px;
+    @media #{$tablet-device}{
+        margin-top: 20px;
+    }
+    @media #{$large-mobile}{
+        margin-top: 5px;
+    }
+}

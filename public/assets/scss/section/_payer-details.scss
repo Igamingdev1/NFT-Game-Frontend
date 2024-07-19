@@ -1,0 +1,177 @@
+.single-player-details{
+    display: flex;
+    flex-direction: row;
+    background: #09002a;
+    padding: 70px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    @media #{$desktop-device}{
+        padding: 40px;
+     }
+    @media #{$tablet-device}{
+        flex-direction: column;
+        padding: 70px;
+     }
+    @media #{$large-mobile}{
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    .side__left{
+        width: 40%;
+        margin-right: 70px;
+        @media #{$tablet-device, $large-mobile}{
+           width: 100%;
+           margin-right: 0;
+        }
+
+        .social-link{
+            font-size: 18px;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            a{
+                margin-right: 15px;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                color: $white;
+    
+                &:last-child{
+                    margin-right: 0;
+                }
+
+                &:nth-child(1){border-color: #ffc400;}
+                &:nth-child(2){border-color: #1ee3eb;}
+                &:nth-child(3){border-color: #df4c21;}
+
+                &:hover {
+                    &:nth-child(1){background-color: #ffc400;}
+                    &:nth-child(2){background-color: #1ee3eb;}
+                    &:nth-child(3){background-color: #df4c21;}
+                }
+            }
+        }
+    }
+
+    .side__right{
+        width: calc(60% - 70px);
+        @media #{$tablet-device, $large-mobile}{
+           margin-top: 30px;
+           width: 100%;
+        }
+    }
+
+    .image{
+        border-radius: 15px;
+        border: 5px solid rgba(255, 255, 255, 0.4);
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+
+    .content{
+        margin-top: 0;
+
+        @media #{$tablet-device, $large-mobile}{
+            margin-top: 30px;
+        }
+        .title-tag{
+            display: block;
+            font-size: 22px;
+            font-weight: 700;
+            color: #b154f0;
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 96px;
+            @media #{$tablet-device, $large-mobile}{
+                margin-bottom: 20px;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                width: 66px;
+                height: 6px;
+                background: #b154f0;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+        }
+        .title{
+            font-size: 54px;
+            line-height: 1.6;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            @media #{$desktop-device, $tablet-device, $large-mobile}{
+                font-size: 45px;
+            }
+            @media #{$small-mobile2}{
+                font-size: 40px;
+            }
+        }
+
+        p{
+            font-size: 21px;
+            line-height: 1.6;
+            color: #f3f3f3;
+            margin-bottom: 20px;
+
+            @media #{$small-mobile2}{
+                font-size: 17px;
+            }
+        }
+        
+
+        .btn{
+            margin-top: 35px;
+        }
+    }
+
+
+    .mascot-logo{
+        position: absolute;
+        bottom: -100px;
+        right: -50px;
+    }
+}
+
+.player-profile{
+    position: relative;
+    padding: 27px 20px;
+    text-align: center;
+    transition: all .3s ease;
+    z-index: 1;
+    margin-top: 30px;
+
+    .title{
+        font-size: 25px;
+        line-height: 38px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    .content-shape-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+
+        img{
+            width: 100%;
+            height: 126px;
+            object-fit: fill;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}

@@ -1,0 +1,328 @@
+// game details css here
+.game_details_section {
+    &.mb-125{
+        @media #{$tablet-device}{
+            margin-bottom: 69px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 48px;
+        }
+    }
+}
+.game_details_inner{
+    margin-bottom: 60px;
+    
+}
+.game_details_thumb_inner {
+    & > button{
+        bottom: -104px;
+        top: auto;
+        transform: inherit;
+        @media #{$large-mobile}{
+            bottom: -85px;
+        }
+        @media #{$small-mobile2}{
+            bottom: -52px;
+         }
+        &.next_arrow {
+            left: 100px;
+            right: auto;
+            @media #{$small-mobile2}{
+                left: 80px;
+            }
+        }   
+    }
+    margin-bottom: 40px;
+    @media #{$large-mobile}{
+        margin-bottom: 25px;
+    }
+    @media #{$small-mobile2}{
+        margin-bottom: 80px;
+     }
+}
+.start_now_btn{
+    text-align: right;
+    @media #{$small-mobile2}{
+        text-align: center;
+    }
+}
+.game_details_content{
+    @media #{$small-mobile2}{
+        text-align: center;
+    }
+    &.top{
+        margin-bottom: 52px;
+        @media #{$large-mobile}{
+            margin-bottom: 30px;
+        }
+    }
+    &.bottom{
+        padding-top: 42px;
+        @media #{$large-mobile}{
+            padding-top: 54px;
+        }
+    }
+    & > span{
+        font-size: 18px;
+        line-height: 35px;
+        font-weight: 600;
+        color: $secondary_color;
+        margin-bottom: 24px;
+        @media #{$desktop-device}{
+            margin-bottom: 20px;
+        }
+        @media #{$tablet-device}{
+            font-size: 16px;
+            line-height: 25px;
+            margin-bottom: 19px;
+        }
+        @media #{$large-mobile}{
+            font-size: 15px;
+            line-height: 25px;
+            margin-bottom: 14px;
+        }
+    }
+    
+    & h2{
+        &.game_details_title{
+            font-size: 50px;
+            line-height: 55px;
+            margin-bottom: 28px;
+            @media #{$desktop-device}{
+                font-size: 40px;
+                line-height: 50px;
+            }
+            @media #{$tablet-device}{
+                font-size: 33px;
+                line-height: 40px;
+                margin-bottom: 20px;
+            }
+            @media #{$large-mobile}{
+                font-size: 28px;
+                line-height: 33px;
+                margin-bottom: 22px;
+            }
+            @media #{$small-mobile2}{
+                font-size: 21px;
+                line-height: 31px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    & h2{
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 23px;
+        &.color2{
+            color: $secondary_color;
+        }
+        @media #{$desktop-device}{
+            font-size: 28px;
+            line-height: 32px;
+            margin-bottom: 20px;
+        }
+        @media #{$tablet-device}{
+            font-size: 28px;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+        @media #{$large-mobile}{
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.game_details_desc{
+    & p{
+        line-height: 32px;
+        margin-bottom: 25px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        @media #{$tablet-device}{
+            line-height: 30px;
+            font-size: 15px;
+        }
+        @media #{$large-mobile}{
+            line-height: 28px;
+            margin-bottom: 18px;
+            font-size: 14px;
+        }
+        &.game_details_desc_style2{
+            font-size: 28px;
+            line-height: 42px;
+            font-weight: 600;
+            color: #e77e00;
+            @media #{$desktop-device}{
+                font-size: 23px;
+                line-height: 36px;
+            }
+            @media #{$tablet-device}{
+                font-size: 20px;
+                line-height: 35px;
+            }
+            @media #{$large-mobile}{
+                font-size: 19px;
+                line-height: 32px;
+            }
+            @media #{$small-mobile2}{
+                font-size: 17px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+.game_details_content_step {
+    margin-bottom: 40px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    @media #{$large-mobile}{
+        margin-bottom: 30px;
+    }
+    
+}
+
+.gam_additional_information{
+    background: #16073a;
+    padding: 44px 65px;
+    border-radius: 10px;
+    margin-bottom: 44px;
+    @media #{$desktop-device}{
+        padding: 44px 52px;
+    }
+    @media #{$tablet-device}{
+        padding: 35px 26px;
+        margin-bottom: 36px;
+    }
+    @media #{$large-mobile}{
+        padding: 30px 25px 5px;
+        margin-bottom: 28px;
+    }
+    @media #{$small-mobile2}{
+        padding: 30px 12px 5px;
+     }
+    & > h3.additional_information_title{
+        font-size: 22px;
+        line-height: 25px;
+        margin-bottom: 33px;
+        @media #{$desktop-device}{
+            font-size: 20px;
+            line-height: 22px;
+        }
+        @media #{$tablet-device}{
+            font-size: 20px;
+            line-height: 22px;
+            margin-bottom: 30px;
+        }
+        @media #{$small-mobile2}{
+            font-size: 20px;
+            line-height: 22px;
+            margin-bottom: 25px;
+        }
+    }
+}
+.gam_additional_inner {
+    @media #{$large-mobile}{
+        flex-wrap: wrap;
+    }
+}
+.additional_information_text{
+    margin-right: 100px;
+    &:last-child{
+        margin-right: 0;
+    }
+    @media #{$desktop-device}{
+        margin-right: 65px;
+    }
+    @media #{$tablet-device}{
+        margin-right: 38px;
+    }
+    @media #{$large-mobile}{
+        margin-right: 0;
+        width: 50%;
+        margin-bottom: 25px;
+    }
+    @media #{$small-mobile2}{
+       width: 100%;
+       margin-bottom: 21px;
+    }
+    & h4{
+        font-size: 16px;
+        line-height: 35px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #f3f3f3;
+        margin-bottom: 6px;
+        @media #{$tablet-device}{
+            font-size: 15px;
+            line-height: 32px;
+            margin-bottom: 6px;
+        }
+        @media #{$large-mobile}{
+            line-height: 32px;
+            margin-bottom: 3px;
+        }
+        @media #{$small-mobile2}{
+            font-size: 15px;
+            line-height: 28px;
+            margin-bottom: 3px;
+         }
+    }
+    & span{
+        color: #c7c7c7;
+        @media #{$tablet-device}{
+            font-size: 14px;
+        }
+        @media #{$small-mobile2}{
+            font-size: 14px;
+            line-height: 25px;
+        }
+    }
+}
+.comment_list .comment_content{
+    & .game__review {
+        & span{
+            margin-bottom: 0;
+            margin-left: 20px;
+            @media #{$small-mobile2}{
+                margin-left: 0;
+                margin-top: 8px;
+             }
+        }
+        & ul{
+            & li{
+                & a{
+                    @media #{$small-mobile2}{
+                       margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.game__review{
+    margin-bottom: 10px;
+    @media #{$small-mobile2}{
+        flex-direction: column;
+    }
+    & ul{
+        & li{
+            &:last-child{
+                & a{
+                    color: #ffffff;
+                }
+            }
+            & a{
+                font-size: 14px;
+                color: #ff7901;
+                @media #{$small-mobile2}{
+                   margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+// Font Family
+$exofonts: 'Exo', sans-serif;
+$metalfonts: 'Metal Mania', cursive;
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+// Colors ---------------
+
+// Theme Color
+
+$fonts_color: #282828;
+
+
+$secondary_color: #b154f0;
+$secondary_color2: #09002a;
+$secondary_color3: #243a6e;
+
+
+$white: #ffffff;
+$black: #000000;
+
+// Dark Color
+$grey_color: #ededed;
+
+// Body Color
+$body-color: #fff;
+
+
+
+
+
+
+
+
+
+// Responsive Variables
+$extrabig-device : 'only screen and (min-width: 1600px)';
+$laptop-device : 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$mini-laptop-device : 'only screen and (min-width: 1200px) and (max-width: 1365px)';
+$desktop-device : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$tablet-device:'only screen and (min-width: 768px) and (max-width: 991px)';
+$small-mobile3:'only screen and (min-width: 430px) and (max-width: 575px)';
+$large-mobile:'only screen and (max-width: 767px)';
+$small-mobile2: 'only screen and (max-width: 575px)';
+$small-mobile: 'only screen and (max-width: 479px)';
+

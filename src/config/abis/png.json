@@ -1,0 +1,574 @@
+[
+    {
+        "type": "constructor",
+        "stateMutability": "nonpayable",
+        "inputs": [
+            {
+                "type": "address",
+                "name": "_strategy",
+                "internalType": "address"
+            },
+            {
+                "type": "address",
+                "name": "_rewardToken",
+                "internalType": "address"
+            },
+            {
+                "type": "address",
+                "name": "_vestPool",
+                "internalType": "address"
+            },
+            {
+                "type": "address",
+                "name": "_feeRecipient",
+                "internalType": "address"
+            }
+        ]
+    },
+    {
+        "type": "event",
+        "name": "OwnershipTransferred",
+        "inputs": [
+            {
+                "type": "address",
+                "name": "previousOwner",
+                "internalType": "address",
+                "indexed": true
+            },
+            {
+                "type": "address",
+                "name": "newOwner",
+                "internalType": "address",
+                "indexed": true
+            }
+        ],
+        "anonymous": false
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "uint256", "name": "", "internalType": "uint256" }
+        ],
+        "name": "MAX_FEE",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "uint256", "name": "", "internalType": "uint256" }
+        ],
+        "name": "accRewardPerShare",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "uint256", "name": "", "internalType": "uint256" }
+        ],
+        "name": "available",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "uint256", "name": "", "internalType": "uint256" }
+        ],
+        "name": "balance",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "uint256", "name": "", "internalType": "uint256" }
+        ],
+        "name": "balanceOf",
+        "inputs": [
+            { "type": "address", "name": "account", "internalType": "address" }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "claim",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            {
+                "type": "uint256",
+                "name": "_autoRewards",
+                "internalType": "uint256"
+            },
+            {
+                "type": "uint256",
+                "name": "_poolRewards",
+                "internalType": "uint256"
+            }
+        ],
+        "name": "claimable",
+        "inputs": [
+            { "type": "address", "name": "_user", "internalType": "address" }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "deposit",
+        "inputs": [
+            { "type": "uint256", "name": "_amount", "internalType": "uint256" }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "depositAll",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "earn",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "uint256", "name": "", "internalType": "uint256" }
+        ],
+        "name": "earned",
+        "inputs": [
+            { "type": "address", "name": "account", "internalType": "address" }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "enableVest",
+        "inputs": [{ "type": "bool", "name": "_flag", "internalType": "bool" }]
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [{ "type": "bool", "name": "", "internalType": "bool" }],
+        "name": "enabledVest",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "uint256", "name": "", "internalType": "uint256" }
+        ],
+        "name": "feeDuration",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "address", "name": "", "internalType": "address" }
+        ],
+        "name": "feeRecipient",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "uint256", "name": "", "internalType": "uint256" }
+        ],
+        "name": "getPricePerFullShare",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "inCaseTokensGetStuck",
+        "inputs": [
+            { "type": "address", "name": "_token", "internalType": "address" }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [{ "type": "bool", "name": "", "internalType": "bool" }],
+        "name": "isMaximizer",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "notifySentReward",
+        "inputs": [
+            { "type": "uint256", "name": "_amount", "internalType": "uint256" }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "address", "name": "", "internalType": "contract IERC20" }
+        ],
+        "name": "output",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "address", "name": "", "internalType": "address" }
+        ],
+        "name": "owner",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "uint256", "name": "", "internalType": "uint256" }
+        ],
+        "name": "performanceFee",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            {
+                "type": "address",
+                "name": "",
+                "internalType": "contract IPriceCalculator"
+            }
+        ],
+        "name": "priceCalc",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "uint256", "name": "", "internalType": "uint256" }
+        ],
+        "name": "principalOf",
+        "inputs": [
+            { "type": "address", "name": "account", "internalType": "address" }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "renounceOwnership",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "uint256", "name": "", "internalType": "uint256" }
+        ],
+        "name": "rewardMintRate",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "address", "name": "", "internalType": "contract ISnow" }
+        ],
+        "name": "rewardToken",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "setFeeDuration",
+        "inputs": [
+            {
+                "type": "uint256",
+                "name": "_duration",
+                "internalType": "uint256"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "setFeeRecipient",
+        "inputs": [
+            {
+                "type": "address",
+                "name": "_recipient",
+                "internalType": "address"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "setMaximizerMode",
+        "inputs": [{ "type": "bool", "name": "_mode", "internalType": "bool" }]
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "setPerformanceFee",
+        "inputs": [
+            { "type": "uint256", "name": "_fee", "internalType": "uint256" }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "setPriceCalculator",
+        "inputs": [
+            { "type": "address", "name": "_calc", "internalType": "address" }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "setRewardMintRate",
+        "inputs": [
+            { "type": "uint256", "name": "_rate", "internalType": "uint256" }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "setRewardToken",
+        "inputs": [
+            { "type": "address", "name": "_token", "internalType": "address" }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "setUniswapRouter",
+        "inputs": [
+            { "type": "address", "name": "_router", "internalType": "address" }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "setVestPool",
+        "inputs": [
+            { "type": "address", "name": "_pool", "internalType": "address" }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "setWithdrawalFee",
+        "inputs": [
+            { "type": "uint256", "name": "_fee", "internalType": "uint256" }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "uint256", "name": "", "internalType": "uint256" }
+        ],
+        "name": "sharesOf",
+        "inputs": [
+            { "type": "address", "name": "account", "internalType": "address" }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "address", "name": "", "internalType": "contract IERC20" }
+        ],
+        "name": "stakingToken",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            {
+                "type": "address",
+                "name": "",
+                "internalType": "contract IStrategy"
+            }
+        ],
+        "name": "strategy",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            {
+                "type": "uint256",
+                "name": "tokenAmount",
+                "internalType": "uint256"
+            },
+            {
+                "type": "uint256",
+                "name": "usdAmount",
+                "internalType": "uint256"
+            }
+        ],
+        "name": "totalEarned",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "uint256", "name": "", "internalType": "uint256" }
+        ],
+        "name": "totalPendingSnowReward",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "uint256", "name": "", "internalType": "uint256" }
+        ],
+        "name": "totalPrincipal",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "uint256", "name": "", "internalType": "uint256" }
+        ],
+        "name": "totalShares",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "uint256", "name": "", "internalType": "uint256" }
+        ],
+        "name": "totalSupply",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "transferOwnership",
+        "inputs": [
+            { "type": "address", "name": "newOwner", "internalType": "address" }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            {
+                "type": "address",
+                "name": "",
+                "internalType": "contract IUniswapV2Router02"
+            }
+        ],
+        "name": "uniswapRouter",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "uint256", "name": "", "internalType": "uint256" }
+        ],
+        "name": "userCount",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "address[]", "name": "", "internalType": "address[]" }
+        ],
+        "name": "userList",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "vest",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            {
+                "type": "address",
+                "name": "",
+                "internalType": "contract IVestPool"
+            }
+        ],
+        "name": "vestPool",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "address", "name": "", "internalType": "contract IERC20" }
+        ],
+        "name": "want",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "withdraw",
+        "inputs": [
+            { "type": "uint256", "name": "_amount", "internalType": "uint256" }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "withdrawAll",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            { "type": "uint256", "name": "", "internalType": "uint256" }
+        ],
+        "name": "withdrawalFee",
+        "inputs": []
+    }
+]
